@@ -51,6 +51,7 @@ export default defineNuxtConfig({
     '@zadigetvoltaire/nuxt-gtm',
     'nuxt-delay-hydration',
     'nuxt-vitalizer',
+    '@nuxtjs/seo',
   ],
 
   gtm: {
@@ -71,6 +72,10 @@ export default defineNuxtConfig({
 
   },
 
+  // delayHydration:{
+  //   mode: 'mount' //hydrate after initial render
+  // },
+
   googleFonts: {
     families: {
       // Specify the fonts and their variants here
@@ -84,4 +89,44 @@ export default defineNuxtConfig({
     download: true, // Download the fonts and serve them locally
     inject: true, // Inject the Google Fonts link tag into the header
   },
+
+
+
+  //SEO
+
+  site: { 
+    url: 'https://topspeedservice.eu', 
+    name: 'Top Speed Service' 
+    }, 
+
+
+    schemaOrg: {
+      identity: {
+        type: "AutoRepair",
+        name: "Top Speed Service",
+        url: "https://topspeedservice.eu",
+        telephone: "+40788990011",
+        address: {
+          type: "PostalAddress",
+          streetAddress: "Sos. Clinceni, DJ401A 6",
+          addressLocality: "Bragadiru",
+          postalCode: "077025",
+          addressCountry: "RO"
+        },
+        geo: {
+          type: "GeoCoordinates",
+          latitude: 44.37006664441284,
+          longitude: 25.96906184733097
+        },
+        openingHoursSpecification: {
+          type: "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "08:00",
+          closes: "17:00"
+        },
+        sameAs: [
+          
+        ]
+      }
+    }
 })
