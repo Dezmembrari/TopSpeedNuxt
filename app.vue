@@ -1,13 +1,17 @@
 <template>
   <div>
-    <header class="sticky top-0 z-50">
-            <Navigation/>
-        </header>
+    <DelayHydration>
+      <header class="sticky top-0 z-50">
+        <Navigation />
+      </header>
+    </DelayHydration>
 
-        <NuxtPage />
-
-        <footer>
-           <Footer/>
-        </footer>
+    <NuxtPage />
+    
+    <SkipHydration>
+      <footer>
+        <Footer />
+      </footer>
+    </SkipHydration>
   </div>
 </template>

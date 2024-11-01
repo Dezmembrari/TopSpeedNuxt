@@ -14,7 +14,7 @@
       <span class="review-count">({{ totalReviews }}+ reviews)</span>
     </div>
     <div class="google-badge">
-      <NuxtImg src="/Google_logo.svg" height="24px" width="24px" densities="x1" alt="Google Logo" />
+      <NuxtImg src="/Google_logo.svg" height="24px" width="24px" densities="x1" alt="Google Logo" loading="lazy"/>
       <span>Google Reviews</span>
     </div>
   <!-- </a> -->

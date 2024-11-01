@@ -7,8 +7,8 @@
 
           <div class="overlap">
               <div class="imagine">
-                  <img alt="Poza receptie" class="whatsapp-image"
-                      src="../assets/images/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp" 
+                  <NuxtImg alt="Poza receptie" class="whatsapp-image"
+                      src="/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp" 
                       fetchpriority="high"
                       />
               </div>
@@ -65,7 +65,7 @@
               </a>
           </div>
           <div class="hero-image">
-              <NuxtImg sizes="xs:100vw sm:100vw md:100vw" densities="x1" alt="receptie" src="/receptie.webp" />
+              <NuxtImg sizes="xs:100vw sm:100vw md:100vw" densities="x1" alt="receptie" src="/receptie.webp" loading="lazy"/>
           </div>
       </div>
   </div>

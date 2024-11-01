@@ -7,7 +7,7 @@
             <!-- Card 1 -->
             <div class="m-2 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark text-center">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
-                    <NuxtImg class="rounded-t-lg object-cover w-full max-h-60" src="/pexels.webp" alt="" sizes="320px sm:640px" densities="x1"/>
+                    <NuxtImg class="rounded-t-lg object-cover w-full max-h-60" src="/pexels.webp" alt="" sizes="320px sm:640px" densities="x1" loading="lazy"/>
                     <a>
                         <div
                             class="absolute inset-0 h-full w-full bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
@@ -33,7 +33,7 @@
             <div class="m-2 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark text-center">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
                     <NuxtImg class="rounded-t-lg object-cover w-full max-h-60" src="/mercedes-platforma.webp"
-                        alt="" sizes="320px sm:640px" densities="x1"/>
+                        alt="" sizes="320px sm:640px" densities="x1" loading="lazy"/>
                     <a>
                         <div
                             class="absolute inset-0 h-full w-full bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
@@ -58,7 +58,7 @@
             <!-- Card 3 -->
             <div class="m-2 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark text-center">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
-                    <NuxtImg class="rounded-t-lg object-cover w-full max-h-60" src="/hands.webp" alt="" sizes="320px sm:640px" densities="x1"/>
+                    <NuxtImg class="rounded-t-lg object-cover w-full max-h-60" src="/hands.webp" alt="" sizes="320px sm:640px" densities="x1" loading="lazy"/>
                     <a>
                         <div
                             class="absolute inset-0 h-full w-full bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">

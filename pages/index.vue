@@ -1,13 +1,15 @@
 <template>
   <DelayHydration>
-  <div>
-    <Hero />
-    <Cards />
-    <Steps />
-    <client-only>
-      <Contact_noform />
-    </client-only>
-  </div>
+    <div>
+      <Hero />
+      <SkipHydration>
+        <Cards />
+        <Steps />
+      </SkipHydration>
+      <client-only>
+        <Contact_noform />
+      </client-only>
+    </div>
   </DelayHydration>
 </template>
 

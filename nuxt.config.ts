@@ -50,6 +50,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@zadigetvoltaire/nuxt-gtm',
     'nuxt-delay-hydration',
+    'nuxt-vitalizer',
   ],
 
   gtm: {
@@ -59,6 +60,15 @@ export default defineNuxtConfig({
     compatibility: true, // Will add `async` and `defer` to the script tag to not block requests for old browsers that do not support `async`
     //defer: true, // Load the script without blocking page rendering
     enableRouterSync: true, // Pass the router instance of your app to automatically sync with router (optional)
+  },
+
+  vitalizer: {
+    // Remove the render-blocking entry CSS
+    disableStylesheets: 'entry',
+
+
+    disablePrefetchLinks: true,
+
   },
 
   googleFonts: {
