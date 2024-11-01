@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    prerender:{
+    prerender: {
       crawlLinks: true,
       routes: [/*"/sitemap.xml", "/robots.txt",*/ "/"],
     },
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       gzip: true,
     },
     routeRules: {
-      '/**': { 
+      '/**': {
         headers: {
           'Accept-Encoding': 'br, gzip'
         }
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     // delay the home page
-    '/': { delayHydration: 'mount', prerender: true,},
+    '/': { delayHydration: 'mount', prerender: true, },
   },
 
   css: ["~/assets/css/main.css",],
@@ -94,39 +94,55 @@ export default defineNuxtConfig({
 
   //SEO
 
-  site: { 
-    url: 'https://topspeedservice.eu', 
-    name: 'Top Speed Service' 
-    }, 
+  site: {
+    url: 'topspeedservice.eu',
+    name: 'Top Speed Service Bragadiru - Service Auto și Centru Daune'
+  },
 
 
-    schemaOrg: {
-      identity: {
-        type: "AutoRepair",
-        name: "Top Speed Service",
-        url: "https://topspeedservice.eu",
-        telephone: "+40788990011",
-        address: {
-          type: "PostalAddress",
-          streetAddress: "Sos. Clinceni, DJ401A 6",
-          addressLocality: "Bragadiru",
-          postalCode: "077025",
-          addressCountry: "RO"
-        },
-        geo: {
-          type: "GeoCoordinates",
-          latitude: 44.37006664441284,
-          longitude: 25.96906184733097
-        },
-        openingHoursSpecification: {
-          type: "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "08:00",
-          closes: "17:00"
-        },
-        sameAs: [
-          
-        ]
-      }
+  schemaOrg: {
+    identity: {
+      type: "AutoRepair",
+      name: "Top Speed Service",
+      url: "https://topspeedservice.eu",
+      telephone: "+40788990011",
+      address: {
+        type: "PostalAddress",
+        streetAddress: "Sos. Clinceni, DJ401A 6",
+        addressLocality: "Bragadiru",
+        postalCode: "077025",
+        addressCountry: "RO"
+      },
+      geo: {
+        type: "GeoCoordinates",
+        latitude: 44.37006664441284,
+        longitude: 25.96906184733097
+      },
+      openingHoursSpecification: {
+        type: "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "17:00"
+      },
+      sameAs: [
+
+      ]
     }
+  },
+
+  app:{
+    head:{
+      htmlAttrs:{
+        lang: 'ro',
+      },
+
+      title: 'Top Speed Service Bragadiru - Service Auto și Centru Daune',
+      meta: [
+        {
+          name: "description",
+          content: "Top Speed Service din Bragadiru oferă servicii auto complete de mecanică, tinichigerie, vopsitorie și constatare daune pentru vehiculul tău.",
+        }
+      ]
+    }
+  }
 })
