@@ -136,13 +136,17 @@ export default defineNuxtConfig({
         lang: 'ro',
       },
 
-      title: 'Top Speed Service Bragadiru - Service Auto și Centru Daune',
       meta: [
         {
           name: "description",
           content: "Top Speed Service din Bragadiru oferă servicii auto complete de mecanică, tinichigerie, vopsitorie și constatare daune pentru vehiculul tău.",
-        }
-      ]
+        },
+        { property: 'og:title', content: 'Top Speed Service Bragadiru - Service Auto și Centru Daune' },
+        { property: 'og:description', content: 'Top Speed Service din Bragadiru oferă servicii auto complete de mecanică, tinichigerie, vopsitorie și constatare daune pentru vehiculul tău.' },
+        { property: 'og:image', content: 'https://topspeedservice.eu/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp' },
+        { property: 'og:url', content: 'https://topspeedservice.eu' },
+        { property: 'og:type', content: 'website' }
+      ],
     }
   }
 })
