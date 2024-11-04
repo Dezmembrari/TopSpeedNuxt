@@ -135,16 +135,18 @@ export default defineNuxtConfig({
         postalCode: "077025",
         addressCountry: "RO"
       },
-      geo: {
-        type: "GeoCoordinates",
-        latitude: 44.37006664441284,
-        longitude: 25.96906184733097
-      },
-      openingHoursSpecification: {
-        type: "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "08:00",
-        closes: "17:00"
+      Place: {
+        geo: {
+          type: "GeoCoordinates",
+          latitude: 44.37006664441284,
+          longitude: 25.96906184733097
+        },
+        openingHoursSpecification: {
+          type: "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "08:00",
+          closes: "17:00"
+        },
       },
       sameAs: [
 
@@ -152,9 +154,9 @@ export default defineNuxtConfig({
     }
   },
 
-  app:{
-    head:{
-      htmlAttrs:{
+  app: {
+    head: {
+      htmlAttrs: {
         lang: 'ro',
       },
 
