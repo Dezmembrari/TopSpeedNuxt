@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: [/*"/sitemap.xml", "/robots.txt",*/ "/"],
+      routes: ["/sitemap.xml", "/robots.txt", "/"],
     },
 
     compressPublicAssets: {
@@ -97,6 +97,20 @@ export default defineNuxtConfig({
   site: {
     url: 'topspeedservice.eu',
     name: 'Top Speed Service Bragadiru - Service Auto și Centru Daune'
+  },
+
+  sitemap: {
+    autoLastmod: true,
+    exclude: [
+      '/admin/**',
+      '/webmail/**'
+    ],
+
+    xsl: false,
+  },
+
+  robots: {
+    sitemap: 'https://topspeedservice.eu/sitemap.xml',
   },
 
 
