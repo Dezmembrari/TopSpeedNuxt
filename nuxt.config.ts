@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       brotli: true,
       gzip: true,
     },
-    
+
     routeRules: {
       '/**': {
         headers: {
@@ -118,7 +118,13 @@ export default defineNuxtConfig({
   },
 
   robots: {
-    sitemap: 'https://topspeedservice.eu/sitemap.xml',
+    rules: [
+      {
+        UserAgent: '*',
+        Disallow: '',
+      }
+    ],
+    sitemap: 'https://https://topspeedservice.eu/robots.txt?canonical'
   },
 
 
