@@ -20,10 +20,20 @@ export default defineNuxtConfig({
       brotli: true,
       gzip: true,
     },
+    
     routeRules: {
       '/**': {
         headers: {
           'Accept-Encoding': 'br, gzip'
+        }
+      },
+
+      // Allow XML files to be served properly
+      '/sitemap*.xml': {
+        headers: {
+          'content-type': 'application/xml',
+          // Optional: Add cache control if needed
+          'cache-control': 'max-age=3600'
         }
       }
     },
