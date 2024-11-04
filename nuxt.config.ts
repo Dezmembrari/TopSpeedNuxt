@@ -135,7 +135,8 @@ export default defineNuxtConfig({
         postalCode: "077025",
         addressCountry: "RO"
       },
-      Place: {
+      place: {
+        type: "Place",
         geo: {
           type: "GeoCoordinates",
           latitude: 44.37006664441284,
@@ -153,6 +154,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+
+
+
 
   app: {
     head: {
