@@ -105,8 +105,6 @@ export default defineNuxtConfig({
       '/admin/**',
       '/webmail/**'
     ],
-
-    xsl: false,
   },
 
   robots: {
