@@ -118,12 +118,6 @@ export default defineNuxtConfig({
   },
 
   robots: {
-    rules: [
-      {
-        UserAgent: '*',
-        Disallow: '',
-      }
-    ],
     sitemap: 'https://https://topspeedservice.eu/robots.txt?canonical'
   },
 
