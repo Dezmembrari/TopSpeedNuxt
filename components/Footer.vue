@@ -2,7 +2,7 @@
   <footer class="bg-tertiary-blue text-white w-full p-5 absolute left-0 min-w-96">
     <div class="flex justify-around flex-wrap gap-8">
       <div class="flex-1 min-w-min">
-        <h1 class="text-5xl font-bold text-shadow-md">Top Speed Service</h1>
+        <h2 class="text-5xl font-bold text-shadow-md">Top Speed Service</h2>
         <hr class="border-t-2 border-white-300 mt-2 w-full" />
       </div>
       <div class="flex-1 min-w-min">
