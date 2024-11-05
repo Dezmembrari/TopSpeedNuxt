@@ -135,18 +135,6 @@ export default defineNuxtConfig({
         postalCode: "077025",
         addressCountry: "RO"
       },
-      "geo": {
-        type: "GeoCoordinates",
-        latitude: 44.37006664441284,
-        longitude: 25.96906184733097
-      },
-      openingHours: "Mo,Tu,We,Th,Fr 08:00-17:00",
-      isAccessibleForFree: true,
-      currenciesAccepted: "RON,EUR",
-      paymentAccepted:"Cash, Credit Card",
-      sameAs: [
-        "facebook.com/TopSpeedRomania/",
-      ]
     }
   },
 
