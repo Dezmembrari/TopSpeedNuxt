@@ -11,6 +11,8 @@
                       src="/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp" 
                       fetchpriority="high"
                       loading="lazy"
+                      width="1140px"
+                      height="720px"
                       />
               </div>
               <div class="rectangle"></div>
@@ -66,7 +68,7 @@
               </a>
           </div>
           <div class="hero-image">
-              <NuxtImg sizes="xs:100vw sm:100vw md:100vw" densities="x1" alt="receptie" src="/receptie.webp" fetchpriority="high" />
+              <NuxtImg  densities="x2" alt="receptie" src="/receptie.webp" width="630px" height="316px" fetchpriority="high" />
           </div>
       </div>
   </div>
