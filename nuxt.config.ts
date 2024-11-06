@@ -118,7 +118,7 @@ export default defineNuxtConfig({
   },
 
   robots: {
-    sitemap: 'https://topspeedservice.eu/sitemap.txt?canonical'
+    sitemap: 'https://topspeedservice.eu/sitemap.xml?canonical'
   },
 
 
