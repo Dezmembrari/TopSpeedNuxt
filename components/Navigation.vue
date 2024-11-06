@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!mobileBanner" class="top-banner-0w3mEM" data-id="244:1198">
+  <div v-if="!mobileBanner && bannerVisible" class="top-banner-0w3mEM" data-id="244:1198">
     <div class="contact-727KgL" data-id="244:1199">
       <div class="telefon-E0lKG6" data-id="244:1200">
         <Icon class="phone-0TmUck phone" name="line-md:phone-call-twotone-loop" style="color: white" alt="Phone"/>
@@ -95,6 +95,7 @@ export default {
       windowWidth: null,
       showBranding: false,
       mobileBanner: false,
+      bannerVisible: true // Initially true to show the banner
     };
   },
 
@@ -131,7 +132,13 @@ export default {
 
     updateScroll() {
       const scrollPosition = window.scrollY;
-      this.scrolledNav = scrollPosition >= 50;
+      this.scrolledNav = scrollPosition >= 15;
+      if(scrollPosition < 20 && !this.bannerVisible){
+        this.bannerVisible=true;
+      } else {
+        if(scrollPosition >= 70)
+        this.bannerVisible=false;
+      }
     },
 
     checkScreen() {
@@ -402,10 +409,15 @@ header {
     min-width: 360px;
     padding: 0px 15px;
     padding-left: 0; // Align padding to match with branding
+    transition: all 0.3s ease-in;
+
+    .navigation{
+      height: 38px;
+    }
 
     .branding {
       padding: 0px 0px; // Maintain padding for the logo
-      height: 45px;
+      height: 32px;
 
       .polygon{
         position: relative;
