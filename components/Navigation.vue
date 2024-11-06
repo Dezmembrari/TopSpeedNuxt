@@ -132,7 +132,7 @@ export default {
 
     updateScroll() {
       const scrollPosition = window.scrollY;
-      this.scrolledNav = scrollPosition >= 15;
+      this.scrolledNav = scrollPosition >= 10;
       if(scrollPosition < 20 && !this.bannerVisible){
         this.bannerVisible=true;
       } else {
