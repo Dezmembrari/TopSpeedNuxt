@@ -17,10 +17,24 @@
     </div>
   </template>
   
-  <script>
+  <!-- <script>
   export default {
     name: "AboutView",
   };
+  </script> -->
+
+  <script setup>
+    import { useHead } from '@unhead/vue';
+
+    useHead({
+      title: 'Despre',
+      meta: [
+        {
+          name: 'description',
+          content: 'Descriere Top Speed Service Bragadiru',
+        },
+      ],
+    });
   </script>
   
   <style lang="scss">
