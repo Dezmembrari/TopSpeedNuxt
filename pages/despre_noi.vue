@@ -1,4 +1,5 @@
 <template>
+    <h1 class="text-6xl text-center mt-5 text-black "> Despre Top Speed Service </h1>
     <div class="container">
       <div class="frame">
       <img class="unsplash" alt="Unsplash" src="../assets/images/service_1.webp" />
