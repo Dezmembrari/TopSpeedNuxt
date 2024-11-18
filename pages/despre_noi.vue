@@ -28,12 +28,6 @@
 
     useHead({
       title: 'Despre',
-      meta: [
-        {
-          name: 'description',
-          content: 'Descriere Top Speed Service Bragadiru',
-        },
-      ],
     });
   </script>
   
