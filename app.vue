@@ -38,6 +38,11 @@ useSchemaOrg([
       latitude: 44.37006664441284,
       longitude: 25.96906184733097,
     },
+    aggregateRating: {
+    '@type': "AggregateRating",
+    ratingValue: "4.4",
+    reviewCount: "76"
+  },
     openingHours: 'Mo,Tu,We,Th,Fr 08:00-17:00',
     isAccessibleForFree: true,
     currenciesAccepted: 'RON,EUR',
