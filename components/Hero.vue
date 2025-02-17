@@ -1,74 +1,88 @@
 <template>
-  <div  class="hidden md:block">
-      <div class="hero-area">
-          <div class="reviews">
-            <RatingBadge :averageRating="4.5" :totalReviews="70" />
-          </div>
-
-          <div class="overlap">
-              <div class="imagine">
-                  <NuxtImg alt="Poza receptie" class="whatsapp-image"
-                      src="/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp" 
-                      fetchpriority="high"
-                      loading="lazy"
-                      />
-              </div>
-              <div class="rectangle"></div>
-              <div class="text">
-                  <div class="titlu">
-                      <h1 class="CENTRU-CONSTATARE">
-                          <span class="text-wrapper">CENTRU CONSTATARE DAUNE </span>
-                          <span class="span">SERVICE AUTO</span>
-                      </h1>
-                  </div>
-                  <p class="paragraph">
-                      Servicii complete de constatare și reparații daune auto pe asigurare, cu mașină la schimb și
-                      transport cu
-                      platformă fără cost suplimentar.
-                  </p>
-                  <router-link class="link" :to="{ name: 'contact' }">
-                      <div class="extended-FAB">
-                        <Icon class=" w-6 h-6" name="line-md:phone-call-twotone-loop" style="color: darkgreen" alt="Phone"/>  
-                          <div class="label-text">Contact</div>
-                      </div>
-                  </router-link>
-              </div>
-          </div>
+  <div class="hidden md:block">
+    <div class="hero-area">
+      <div class="reviews">
+        <RatingBadge :averageRating="4.5" :totalReviews="70" />
       </div>
+
+      <div class="overlap">
+        <div class="imagine">
+          <NuxtImg alt="Poza receptie" class="whatsapp-image"
+            src="/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp" fetchpriority="high" loading="lazy" />
+        </div>
+        <div class="rectangle"></div>
+        <div class="text">
+          <div class="titlu">
+            <h1 class="CENTRU-CONSTATARE">
+              <span class="text-wrapper">CENTRU CONSTATARE DAUNE </span>
+              <span class="span">SERVICE AUTO</span>
+            </h1>
+          </div>
+          <p class="paragraph">
+            Servicii complete de constatare și reparații daune auto pe asigurare, cu mașină la schimb și
+            transport cu
+            platformă fără cost suplimentar.
+          </p>
+          <router-link class="link" :to="{ name: 'contact' }">
+            <div class="extended-FAB">
+              <Icon class=" w-6 h-6" name="line-md:phone-call-twotone-loop" style="color: darkgreen" alt="Phone" />
+              <div class="label-text">Contact</div>
+            </div>
+          </router-link>
+        </div>
+      </div>
+    </div>
   </div>
 
 
   <div class="md:hidden">
-      <div class="hero-section">
-          <div class="hero-content">
-              <div class="hero-title">
-                  <div class="title-line">
-                      <span class="title-text">CENTRU CONSTATARE DAUNE<br /></span>
-                  </div>
-                  <div class="title-line">
-                      <span class="title-text-bold">SERVICE AUTO</span>
-                  </div>
-              </div>
-              <div class="hero-description">
-                  <p class="description-text">
-                      Servicii complete de constatare și reparații daune auto pe asigurare, cu mașină la schimb și
-                      transport cu
-                      platformă fara cost suplimentar.
-                  </p>
-              </div>
-              <a href="tel:+40788990011" class="contact-button">
-                  <div class="button-content">
-                    <Icon class="w-6 h-6 mb-1" name="line-md:phone-call-twotone-loop" style="color: white" alt="Phone"/>
-                      <div class="button-text">
-                          CONTACTEAZA-NE
-                      </div>
-                  </div>
-              </a>
+    <div class="hero-section">
+      <div class="hero-content">
+        <div class="hero-title">
+          <div class="title-line">
+            <span class="title-text">CENTRU CONSTATARE DAUNE<br /></span>
           </div>
-          <div class="hero-image">
-              <NuxtImg sizes="xs:100vw sm:100vw md:100vw" densities="x1" alt="receptie" src="/receptie.webp" fetchpriority="high" />
+          <div class="title-line">
+            <span class="title-text-bold">SERVICE AUTO</span>
           </div>
+        </div>
+        <div class="hero-description">
+          <p class="description-text">
+            Servicii complete de constatare și reparații daune auto pe asigurare, cu mașină la schimb și
+            transport cu
+            platformă fara cost suplimentar.
+          </p>
+        </div>
+
+        <a href="tel:+40788990011" class=" w-fit mx-auto block ">
+        <div class="extended-FAB">
+          <Icon class=" w-6 h-6" name="line-md:phone-call-twotone-loop" style="color: white" alt="Phone" />
+          <div class="label-text">Contact</div>
+        </div>
+      </a>
+
+        <!-- <a href="tel:+40788990011" class="contact-button">
+          <div class="button-content">
+            <Icon class="w-6 h-6 mb-1" name="line-md:phone-call-twotone-loop" style="color: white" alt="Phone" />
+            <div class="button-text">
+              CONTACTEAZA-NE
+            </div>
+          </div>
+        </a> -->
       </div>
+      <div class="hero-image-mobile">
+        <NuxtImg 
+        src="/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp" 
+        fetchpriority="high" 
+        alt="Top Speed Service Bragadiru"
+        class="hero-img"
+        format="webp"
+        sizes="xs:100vw sm:100vw md:100vw lg:100vw"
+        preload 
+        quality="80"
+    />
+      </div>
+    </div>
   </div>
 
 </template>
@@ -406,13 +420,14 @@
     gap: 17px;
     z-index: 4;
     min-width: 360px;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
   }
 
   .hero-content {
     align-items: center;
     gap: 15px;
-    padding: 24px;
+    padding: 10px;
+    margin-top: 48px;
   }
 
   .hero-title {
@@ -431,28 +446,32 @@
     color: darkgreen;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   }
 
   .title-text {
-    font-size: 19px;
+    font-size: clamp(19px, 6.5vw, 36px);
   }
 
   .title-text-bold {
-    font-size: 38.9px;
+    font-size: clamp(19px, 13vw, 72px);
   }
 
   .hero-description {
-    align-self: stretch;
+    // align-self: stretch;
     border-radius: 19.17px;
-    padding: 15px 20px;
+    padding: 15px 0px;
+    align-items: center;
   }
 
   .description-text {
+    padding-top: 52px;
     color: darkgreen;
     font-family: "Roboto", sans-serif;
     font-size: 22px;
     font-weight: 600;
     line-height: 28px;
+    max-width: 430px;
     text-align: justify;
   }
 
@@ -479,12 +498,12 @@
     display: inline-flex;
     gap: 14px;
     padding: 19px;
-    background-color:darkgreen;
+    background-color: darkgreen;
     border-radius: 118.08px;
   }
 
   .button-icon {
-    
+
     color: white;
   }
 
@@ -507,4 +526,73 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
+
+.hero-image-mobile {
+  align-items: center;
+  /* align-self: stretch; */
+  /* padding: 0 1rem 0 1rem; */
+
+  background-position: 50% 50%;
+  /* aspect-ratio: 1/1; */
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+
+
+  .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+}
+
+.hero-image-mobile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgb(255, 255, 255) 0%,
+      rgb(243, 244, 246) 5%,
+      rgba(243, 244, 246, 0) 40%,
+      rgba(243, 244, 246, 0) 80%,
+      rgba(243, 244, 246, 0.75) 90%,
+      rgba(243, 244, 246, 1) 95%);
+  pointer-events: none;
+}
+
+.extended-FAB {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 166px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #00497e;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s ease;
+
+    &:hover {
+      scale: 1.2;
+    }
+
+    .label-text {
+      position: relative;
+      width: fit-content;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
 </style>

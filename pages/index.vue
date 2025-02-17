@@ -9,6 +9,9 @@
       <client-only>
         <Contact_noform />
       </client-only>
+      <SkipHydration>
+        <DespreNoi />
+      </SkipHydration>
     </div>
   </DelayHydration>
 </template>

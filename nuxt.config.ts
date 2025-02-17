@@ -52,6 +52,7 @@ export default defineNuxtConfig({
     'nuxt-delay-hydration',
     'nuxt-vitalizer',
     '@nuxtjs/seo',
+    '@nuxt/content'
   ],
 
   gtm: {
@@ -130,9 +131,9 @@ export default defineNuxtConfig({
     }
   },
 
-  app:{
-    head:{
-      htmlAttrs:{
+  app: {
+    head: {
+      htmlAttrs: {
         lang: 'ro',
       },
 
@@ -148,5 +149,64 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' }
       ],
     }
-  }
+  },
+
+  components: {
+    global: true,
+    dirs: [
+      { path: '~/components', extensions: ['vue'], priority: 10 }
+    ]
+  },
+
+
+  content: {
+    build: {
+      markdown: {
+        toc: {
+          depth: 3,
+          searchDepth: 3,
+        },
+
+        // remarkPlugins: {
+        //   // Override remark-emoji options
+        //   'remark-emoji': {
+        //     options: {
+        //       emoticon: true
+        //     }
+        //   },
+        //   // Disable remark-gfm
+        //   'remark-gfm': false,
+        //   // Add remark-oembed
+        //   'remark-oembed': {
+        //     // Options
+        //   }
+        // },
+
+        highlight: {
+          theme: {
+            // Default theme (same as single string)
+            default: 'github-light',
+            // Theme used if `html.dark`
+            dark: 'github-dark',
+            // Theme used if `html.sepia`
+            sepia: 'monokai'
+          },
+
+          langs: [
+            'c',
+            'cpp',
+            'java'
+          ],
+
+
+        },
+      }
+    },
+
+    // database: {
+    //   type: 'sqlite',
+    //   filename: 'SQLITE_DB_LOCATION'
+    // },
+
+  },
 })

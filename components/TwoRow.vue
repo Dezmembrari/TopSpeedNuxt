@@ -83,6 +83,11 @@ export default {
     align-content: center;
     justify-content: center;
   }
+
+  @media (max-width: 480px) {
+    padding: 0px;
+    margin: 10px;
+  }
 }
 
 .row {
@@ -93,6 +98,11 @@ export default {
   background: white;
   border-radius: 25px;
   padding: 24px;
+  min-width: 340px;
+
+  @media (max-width: 480px) {
+    padding: 10px;
+  }
 }
 
 .column {
@@ -123,12 +133,11 @@ export default {
     
   }
   @media (max-width: 480px) {
-      width: 90%;
+      width: 100%;
       height: auto;
-      aspect-ratio: 350 / 237.92; // Maintain aspect ratio
       .image{
         width: 100%;
-        
+        min-width: 30px;
       }
     }
 }

@@ -11,7 +11,7 @@
         <Icon class="mail-HSA5eX mail" name="line-md:email-twotone" style="color: white" alt="Mail"/>
         <div class="officetopspeedserviceeu-HSA5eX officetopspeedserviceeu inter-normal-white-14-5px"
           data-id="244:1205">
-          <a href="mailto:contact@topspeedservice.ro" style="color: white;">contact@topspeedservice.ro</a>
+          <a href="mailto:office@topspeedservice.eu" style="color: white;">office@topspeedservice.eu</a>
         </div>
       </div>
     </div>
@@ -46,10 +46,10 @@
           <NuxtLink class="link" to="/servicii">Servicii</NuxtLink>
         </li>
         <li>
-          <NuxtLink class="link" to="/despre_noi">Despre noi</NuxtLink>
+          <NuxtLink class="link" to="/angajam">Angajam</NuxtLink>
         </li>
         <li>
-          <NuxtLink class="link-t" to="/contact">
+          <NuxtLink class="link-t" to="/#contact">
             <div class="contacteaza-ne">
               <Icon class="w-4 h-4" name="line-md:phone-twotone" style="color: white" alt="Phone"/>
               <p>Contacteaza-ne</p>
@@ -59,7 +59,7 @@
       </ul>
 
       <!-- Mobile Icon -->
-          <Icon @click="toggleMobileNav" v-show="mobile" :class="{ 'icon-active': mobileNav }" class="icon"  name="line-md:close-to-menu-alt-transition" style="color: #31522a" alt="Menu_button"/>
+          <Icon @click="toggleMobileNav" v-show="mobile" :class="{ 'icon-active': mobileNav }" class="icon"  name="line-md:close-to-menu-alt-transition" style="color: darkgreen" alt="Menu_button"/>
 
       <!-- Mobile Dropdown Navigation -->
       <transition name="mobile-nav">
@@ -71,10 +71,10 @@
             <NuxtLink class="link" to="/servicii" @click="closeMobileNav">Servicii</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" to="/despre_noi" @click="closeMobileNav">Despre noi</NuxtLink>
+            <NuxtLink class="link" to="/angajam" @click="closeMobileNav">Angajam</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="link" to="/contact" @click="closeMobileNav">Contact</NuxtLink>
+            <NuxtLink class="link" to="/#contact" @click="closeMobileNav">Contact</NuxtLink>
           </li>
         </ul>
       </transition>

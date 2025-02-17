@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full py-6 bg-gray-100 min-w-96">
+    <div class="w-full py-6 bg-gray-100 min-w-[360px]">
         <h2 class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl p-2 sm:p-3 md:p-5">
             Daca aduceți autoturismul la noi pentru reparații pe asigurare, vă oferim gratuit următoarele servicii:
         </h2>
@@ -20,7 +20,7 @@
                         Va punem la dispozitie mașină la schimb pe toată durata reparației, livrată gratuit la adresa
                         dorită.
                     </p>
-                    <NuxtLink to="servicii#masina">
+                    <NuxtLink to="/servicii#masina">
                         <button type="button"
                             class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 focus:bg-primary-accent-300 focus:outline-none">
                             Detalii
@@ -46,7 +46,7 @@
                         Oferim transport cu platforma, fara costuri suplimentare, al masinii din locul indicat de
                         dumneavoastra.
                     </p>
-                    <NuxtLink to="servicii#masina">
+                    <NuxtLink to="servicii#platforma">
                         <button type="button"
                             class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 focus:bg-primary-accent-300 focus:outline-none">
                             Detalii
