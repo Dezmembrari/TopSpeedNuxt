@@ -1,9 +1,6 @@
-# START nuxt-robots (indexable)
+
 User-agent: *
 Disallow: 
 
-Sitemap: https://topspeedservice.eu/sitemap.xml
-# DEVELOPMENT HINTS:
-# - You are mocking a production enviroment with ?mockProductionEnv query.
+Sitemap: https://topspeedservice.eu/sitemap.xml?canonical
 
-# END nuxt-robots

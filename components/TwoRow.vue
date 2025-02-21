@@ -3,7 +3,7 @@
     <!-- First Row -->
     <div class="row shadow-lg" v-if="showFirstRow">
       <div class="column text-column">
-        <h1 class="text-2xl mb-1 font-medium">{{ title1 }}</h1>
+        <h2 class="text-2xl mb-1 font-medium">{{ title1 }}</h2>
         <p class="mb-4 text-base">{{ text1 }}</p>
       </div>
       <div class="column image-column">
@@ -17,7 +17,7 @@
         <div :class="['image', imageClass2]"></div>
       </div>
       <div class="column text-column">
-        <h1 class="text-2xl mb-1 font-medium">{{ title2 }}</h1>
+        <h2 class="text-2xl mb-1 font-medium">{{ title2 }}</h2>
         <p class="mb-4 text-base">{{ text2 }}</p>
       </div>
     </div>
@@ -110,7 +110,7 @@ export default {
 }
 
 .text-column {
-  h1 {
+  h2 {
     align-content: center;
     justify-content: center;
   }

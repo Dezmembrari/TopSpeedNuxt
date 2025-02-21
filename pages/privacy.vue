@@ -6,7 +6,7 @@
       <section>
         <h2>1. Introducere</h2>
         <p>
-          Această Politică de Confidențialitate descrie modul în care colectăm, utilizăm, stocăm și protejăm informațiile dumneavoastră personale atunci când vizitați și utilizați website-urile <a href="https://topspeedservice.ro" target="_blank">topspeedservice.ro</a> și <a href="https://topspeedservice.eu" target="_blank">topspeedservice.eu</a> ("noi", "ne", "al nostru"). Ne angajăm să protejăm confidențialitatea dumneavoastră și să respectăm drepturile de protecție a datelor.
+          Această Politică de Confidențialitate descrie modul în care colectăm, utilizăm, stocăm și protejăm informațiile dumneavoastră personale atunci când vizitați și utilizați website-urile <a href="https://topspeedservice.eu" target="_blank">topspeedservice.ro</a> și <a href="https://topspeedservice.eu" target="_blank">topspeedservice.eu</a> ("noi", "ne", "al nostru"). Ne angajăm să protejăm confidențialitatea dumneavoastră și să respectăm drepturile de protecție a datelor.
         </p>
       </section>
   

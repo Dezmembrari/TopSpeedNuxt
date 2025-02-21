@@ -13,17 +13,27 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: [/*"/sitemap.xml", "/robots.txt",*/ "/"],
+      routes: ["/sitemap.xml", "/robots.txt", "/"],
     },
 
     compressPublicAssets: {
       brotli: true,
       gzip: true,
     },
+
     routeRules: {
       '/**': {
         headers: {
           'Accept-Encoding': 'br, gzip'
+        }
+      },
+
+      // Allow XML files to be served properly
+      '/sitemap*.xml': {
+        headers: {
+          'content-type': 'application/xml',
+          // Optional: Add cache control if needed
+          'cache-control': 'max-age=3600'
         }
       }
     },
@@ -55,14 +65,14 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
 
-  gtm: {
-    id: 'GTM-WF7RMP9G',  // Replace this with your actual GTM container ID
-    enabled: true,       // Enable GTM for all environments
-    debug: false,        // Set to true if you want to see debug messages in the console
-    compatibility: true, // Will add `async` and `defer` to the script tag to not block requests for old browsers that do not support `async`
-    //defer: true, // Load the script without blocking page rendering
-    enableRouterSync: true, // Pass the router instance of your app to automatically sync with router (optional)
-  },
+  // gtm: {
+  //   id: 'GTM-WF7RMP9G',  // Replace this with your actual GTM container ID
+  //   enabled: true,       // Enable GTM for all environments
+  //   debug: false,        // Set to true if you want to see debug messages in the console
+  //   compatibility: true, // Will add `async` and `defer` to the script tag to not block requests for old browsers that do not support `async`
+  //   //defer: true, // Load the script without blocking page rendering
+  //   enableRouterSync: true, // Pass the router instance of your app to automatically sync with router (optional)
+  // },
 
   vitalizer: {
     // Remove the render-blocking entry CSS
@@ -96,8 +106,20 @@ export default defineNuxtConfig({
   //SEO
 
   site: {
-    url: 'topspeedservice.eu',
+    url: 'https://topspeedservice.eu/',
     name: 'Top Speed Service Bragadiru - Service Auto și Centru Daune'
+  },
+
+  sitemap: {
+    autoLastmod: true,
+    exclude: [
+      '/admin/**',
+      '/webmail/**'
+    ],
+  },
+
+  robots: {
+    sitemap: 'https://topspeedservice.eu/sitemap.xml?canonical'
   },
 
 
@@ -114,23 +136,12 @@ export default defineNuxtConfig({
         postalCode: "077025",
         addressCountry: "RO"
       },
-      geo: {
-        type: "GeoCoordinates",
-        latitude: 44.37006664441284,
-        longitude: 25.96906184733097
-      },
-      openingHoursSpecification: {
-        type: "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "08:00",
-        closes: "17:00"
-      },
-      sameAs: [
-
-      ]
     }
   },
 
+  app: {
+    head: {
+      htmlAttrs: {
   app: {
     head: {
       htmlAttrs: {
@@ -145,7 +156,7 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Top Speed Service Bragadiru - Service Auto și Centru Daune' },
         { property: 'og:description', content: 'Top Speed Service din Bragadiru oferă servicii auto complete de mecanică, tinichigerie, vopsitorie și constatare daune pentru vehiculul tău.' },
         { property: 'og:image', content: 'https://topspeedservice.eu/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp' },
-        { property: 'og:url', content: 'https://topspeedservice.eu' },
+        { property: 'og:url', content: 'https://topspeedservice.eu/' },
         { property: 'og:type', content: 'website' }
       ],
     }
