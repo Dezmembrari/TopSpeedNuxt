@@ -65,14 +65,14 @@ export default defineNuxtConfig({
     '@nuxt/content'
   ],
 
-  // gtm: {
-  //   id: 'GTM-WF7RMP9G',  // Replace this with your actual GTM container ID
-  //   enabled: true,       // Enable GTM for all environments
-  //   debug: false,        // Set to true if you want to see debug messages in the console
-  //   compatibility: true, // Will add `async` and `defer` to the script tag to not block requests for old browsers that do not support `async`
-  //   //defer: true, // Load the script without blocking page rendering
-  //   enableRouterSync: true, // Pass the router instance of your app to automatically sync with router (optional)
-  // },
+  gtm: {
+    id: 'GTM-WF7RMP9G',  // Replace this with your actual GTM container ID
+    enabled: true,       // Enable GTM for all environments
+    debug: false,        // Set to true if you want to see debug messages in the console
+    compatibility: true, // Will add `async` and `defer` to the script tag to not block requests for old browsers that do not support `async`
+    //defer: true, // Load the script without blocking page rendering
+    enableRouterSync: true, // Pass the router instance of your app to automatically sync with router (optional)
+  },
 
   vitalizer: {
     // Remove the render-blocking entry CSS
@@ -139,9 +139,6 @@ export default defineNuxtConfig({
     }
   },
 
-  app: {
-    head: {
-      htmlAttrs: {
   app: {
     head: {
       htmlAttrs: {
