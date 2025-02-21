@@ -1,7 +1,6 @@
 <!-- //Postare.vue -->
 <template>  
   <div class="postare">
-    <h4 class="title">{{ title }}</h4>
     <div class="detalii">
       <div v-for="(detail, index) in details" class="detail-item">
 
@@ -20,10 +19,6 @@
 
 <script setup lang="ts">
 defineProps({
-  title: {
-    type: String,
-    required: true
-  },
   details: {
     type: Array as () => string[],
     required: true
@@ -46,34 +41,19 @@ const icons = [
   align-items: flex-start;
   gap: 24px;
   padding: 24px 4rem;
-  width: clamp(340px, 90vw, 1250px);
-  background-color: #fffffffc;
+  width: 100% !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
   border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-  transition: all 0.2s ease-in;
-
-  @media (max-width: 720px) {
-    padding: 16px 1rem;
-  }
-
-  &:hover {
-          scale: 1.05;
-        }
-}
-
-.title {
-  width: 100%;
-  font: 500 22px "Roboto-Medium", Helvetica;
-  color: #000;
 }
 
 .detalii {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  padding: 10px;
-  
+  padding: 10px;  
+  background: none !important;
 }
 
 .detail-item {
@@ -89,7 +69,7 @@ const icons = [
 }
 
 .text {
-  font: 400 16px "Roboto-Regular", Helvetica;
+  font: 16px;
   color: #000;
   text-align: center;
   white-space: nowrap;

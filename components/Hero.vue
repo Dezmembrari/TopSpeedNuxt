@@ -23,12 +23,12 @@
             transport cu
             platformă fără cost suplimentar.
           </p>
-          <router-link class="link" :to="{ name: 'contact' }">
+           <NuxtLink class="link" to="/#contact">
             <div class="extended-FAB">
               <Icon class=" w-6 h-6" name="line-md:phone-call-twotone-loop" style="color: darkgreen" alt="Phone" />
               <div class="label-text">Contact</div>
             </div>
-          </router-link>
+          </NuxtLink>
         </div>
       </div>
     </div>

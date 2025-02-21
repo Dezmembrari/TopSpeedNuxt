@@ -13,10 +13,12 @@
     "@iconify-icons/ic": "^1.2.13",
     "@iconify-icons/mdi": "^1.2.48",
     "@tailwindcss/postcss": "^4.0.6",
+    "@tailwindcss/typography": "^0.5.16",
     "compression": "^1.8.0",
     "nodemailer": "^6.10.0",
     "nuxt": "^3.13.2",
     "sharp": "^0.33.5",
+    "swiper": "^11.2.4",
     "tw-elements": "^2.0.0",
     "vue": "latest",
     "vue-router": "latest"

@@ -1,3 +1,29 @@
+<script setup lang="ts">
+useSeoMeta({
+  ogImage: 'https://topspeedservice.eu/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp',
+  twitterTitle: 'Top Speed Service Bragadiru - Service Auto și Centru Daune',
+  twitterDescription: 'Top Speed Service, un service auto cu peste 20 de ani pe piata angajeaza. Aplica acum!',
+  twitterImage: 'https://topspeedservice.eu/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp',
+  twitterCard: 'summary'
+})
+
+import AplicaAcum from '~/components/AplicaAcum.vue';
+import {type JobMeta } from '~/types/types';
+
+const { data: jobs } = await useAsyncData('jobs', () => {
+  return queryCollection('angajam').select('title', 'meta', 'path' ).all()
+});
+
+
+const getDetailsFromMeta = (meta: JobMeta): string[] => {
+  return [
+    meta.salariu || 'Salariu nespecificat',
+    meta.perioada || 'Perioada nespecificata',
+    meta.program || 'Program nespecificat',
+  ];
+};
+</script>
+
 <template>
   <div class="hero">
 
@@ -55,20 +81,33 @@
         </p>
       </div>
     </div>
-    <div class="aplica-acum">
-      <h4 class="aplica">Aplica acum:</h4>
-      <a href="tel:+40765999999" class="contact-button">
-        <div class="extended-FAB">
-          <Icon class=" w-6 h-6" name="line-md:phone-call-twotone-loop" style="color: white" alt="Phone" />
-          <div class="label-text">Contact</div>
-        </div>
-      </a>
-    </div>
+    <AplicaAcum/>
   </div>
   <div class="big-div bg-[#e6ece4]">
     <h3 class="subtitle">Roluri pe care le cautam:</h3>
 
-    <Postare title="Angajam tinichigiu"
+    <div v-for="job in jobs">
+    <NuxtLink :to="job.path" >
+    <Postare 
+      :title="job.title"
+      :details=getDetailsFromMeta(job.meta)
+    />
+    </NuxtLink>
+    </div>
+
+    <!-- <div v-for="job in jobs">
+      <h1>
+        {{ job.title }} <br>
+        {{ job.meta.salariu }} <br>
+        {{ job.meta.perioada }} <br>
+        {{ job.meta.program }} <br>
+        <br>
+        <br>
+        <br>
+      </h1>
+    </div> -->
+
+    <!-- <Postare title="Angajam tinichigiu"
       :details="['Salariu negociabil de la 9999 RON', 'Perioada nedeterminata', 'Program full-time']" />
 
     <Postare title="Angajam vopsitor-pregatitor"
@@ -78,19 +117,13 @@
       :details="['Salariu negociabil de la 9999 RON', 'Perioada nedeterminata', 'Program full-time']" />
 
     <Postare title="Angajam operator calculator"
-      :details="['Salariu negociabil de la 9999 RON', 'Perioada nedeterminata', 'Program full-time']" />
-  </div> 
+      :details="['Salariu negociabil de la 9999 RON', 'Perioada nedeterminata', 'Program full-time']" /> -->
+  
+    </div> 
 
 <DespreNoi/>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "Desktop",
-});
-</script>
 
 <style scoped>
 .hero {
@@ -274,7 +307,7 @@ export default defineComponent({
   }
 }
 
-.aplica-acum {
+/* .aplica-acum {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -297,7 +330,7 @@ export default defineComponent({
   width: 100%;
 }
 
-/* .text-wrapper-3 {
+ .text-wrapper-3 {
   color: #ffffff;
   font-family: "Roboto-Medium", sans-serif;
   font-size: 14px;
@@ -308,7 +341,7 @@ export default defineComponent({
   text-align: center;
   white-space: nowrap;
   width: fit-content;
-} */
+} 
 
 
 .extended-FAB {
@@ -330,11 +363,11 @@ export default defineComponent({
     scale: 1.2;
   }
 
-  /* .img {
+   .img {
     position: relative;
     width: 24px;
     height: 24px;
-  } */
+  } 
 
   .label-text {
     position: relative;
@@ -344,7 +377,7 @@ export default defineComponent({
     text-align: center;
     white-space: nowrap;
   }
-}
+} */
 </style>
 
 

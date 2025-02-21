@@ -160,6 +160,11 @@ export default defineNuxtConfig({
 
 
   content: {
+
+    watch: {
+      enabled: true,
+    },
+
     build: {
       markdown: {
         toc: {
@@ -167,30 +172,9 @@ export default defineNuxtConfig({
           searchDepth: 3,
         },
 
-        // remarkPlugins: {
-        //   // Override remark-emoji options
-        //   'remark-emoji': {
-        //     options: {
-        //       emoticon: true
-        //     }
-        //   },
-        //   // Disable remark-gfm
-        //   'remark-gfm': false,
-        //   // Add remark-oembed
-        //   'remark-oembed': {
-        //     // Options
-        //   }
-        // },
 
         highlight: {
-          theme: {
-            // Default theme (same as single string)
-            default: 'github-light',
-            // Theme used if `html.dark`
-            dark: 'github-dark',
-            // Theme used if `html.sepia`
-            sepia: 'monokai'
-          },
+          theme: "github-dark",
 
           langs: [
             'c',
@@ -203,10 +187,6 @@ export default defineNuxtConfig({
       }
     },
 
-    // database: {
-    //   type: 'sqlite',
-    //   filename: 'SQLITE_DB_LOCATION'
-    // },
 
   },
 })
