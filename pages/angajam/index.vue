@@ -28,12 +28,18 @@ const getDetailsFromMeta = (meta: JobMeta): string[] => {
   <div class="hero">
 
     <NuxtImg 
-      src="/angajam.jpg" 
-      alt="Hero Image" 
+      src="/angajam.webp" 
+      alt="Hero Image Pagina Angajari" 
       class="hero-img" 
+      loading="eager"
       layout="fill" 
       object-position="50% 50%" 
       object-fit="cover"
+      format="webp"
+      fetchpriority="high"
+      sizes="xs:100vw sm:100vw md:100vw lg:100vw"
+      preload 
+      quality="80"
     />
 
     <h1 class="cauti-o-schimbare">

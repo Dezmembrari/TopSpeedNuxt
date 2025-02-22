@@ -1,3 +1,5 @@
+import { cache } from "sharp";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
@@ -14,6 +16,13 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: ["/sitemap.xml", "/robots.txt", "/"],
+    },
+
+    storage:{
+      cache:{
+        driver: 'fs',
+        base: "./.nitro/cache",
+      },
     },
 
     compressPublicAssets: {
@@ -53,6 +62,12 @@ export default defineNuxtConfig({
     },
   },
 
+  experimental:{
+    payloadExtraction: true,
+    treeshakeClientOnly: true,
+    
+  },
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
@@ -64,6 +79,10 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxt/content'
   ],
+
+  tailwindcss: {
+    viewer: false, // Prevent unnecessary processing
+  },
 
   gtm: {
     id: 'GTM-WF7RMP9G',  // Replace this with your actual GTM container ID

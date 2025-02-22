@@ -7,8 +7,16 @@
 
       <div class="overlap">
         <div class="imagine">
-          <NuxtImg alt="Poza receptie" class="whatsapp-image"
-            src="/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp" fetchpriority="high" loading="lazy" />
+          <NuxtImg 
+            class="whatsapp-image"
+            src="/whatsapp-image-2024-08-04-at-15-45-14-e5fa0d06-1-1.webp" 
+            fetchpriority="high" 
+            alt="Top Speed Service Bragadiru"
+            format="webp"
+            sizes="xs:100vw sm:100vw md:100vw lg:100vw"
+            preload 
+            quality="80"
+            />
         </div>
         <div class="rectangle"></div>
         <div class="text">
@@ -80,6 +88,7 @@
         sizes="xs:100vw sm:100vw md:100vw lg:100vw"
         preload 
         quality="80"
+        loading="eager"
     />
       </div>
     </div>

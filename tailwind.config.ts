@@ -1,9 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+import type { Config } from 'tailwindcss'
+
+export default <Config>{
   content: [
-    "./components/**/*.{vue,js}",
-    "./layouts/**/*.{vue,js}",
-    "./pages/**/*.{vue,js}",
+    "./components/**/*.{vue,js,ts}",
+    "./layouts/**/*.{vue,js,ts}",
+    "./pages/**/*.{vue,js,ts}",
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
     "./assets/css/*.{js,css}",
@@ -13,11 +14,17 @@ export default {
       colors: {
         'tertiary-blue': '#00497e',
       },
-
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
         serif: ['"Open Sans"', 'serif'],
       },
+      typography: ({ theme }: { theme: (path: string) => any }) => ({
+        DEFAULT: {
+          css: {
+            fontFamily: theme('fontFamily.sans'),
+          },
+        },
+      }),
     },
   },
   darkMode: "class",
