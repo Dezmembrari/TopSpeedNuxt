@@ -18,7 +18,8 @@
 
 <script setup>
 definePageMeta({
-  prerender: true  // Enables SSG (Static Generation) for this page
+  prerender: true,  // Enables SSG (Static Generation) for this page
+  lazy: true,
 })
 
 
