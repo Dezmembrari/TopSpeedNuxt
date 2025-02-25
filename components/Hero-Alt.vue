@@ -201,7 +201,7 @@
   .hero-content {
     position: absolute;
     margin: 0;
-    top: 15%;
+    top: 5%;
     left: 0;
     width: clamp(360px, 50%, 600px);
     z-index: 2;
@@ -210,7 +210,7 @@
   .hero-image-mobile {
     width: 100%;
     height: 80vh;
-    min-height: 700px;
+    min-height: 650px;
     position: relative;
     z-index: 1;
     overflow: hidden;

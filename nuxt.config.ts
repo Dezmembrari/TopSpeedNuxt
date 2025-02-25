@@ -89,7 +89,7 @@ export default defineNuxtConfig({
     enabled: true,       // Enable GTM for all environments
     debug: false,        // Set to true if you want to see debug messages in the console
     compatibility: true, // Will add `async` and `defer` to the script tag to not block requests for old browsers that do not support `async`
-    //defer: true, // Load the script without blocking page rendering
+    defer: true, // Load the script without blocking page rendering
     enableRouterSync: true, // Pass the router instance of your app to automatically sync with router (optional)
   },
 

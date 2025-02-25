@@ -8,6 +8,7 @@
             <div class="m-2 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark text-center">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
                     <NuxtImg class="rounded-t-lg object-cover w-full max-h-60" 
+                    defer
                     src="/pexels.webp" 
                     alt="handshake" 
                     sizes="320px sm:640px" 
@@ -40,6 +41,7 @@
             <div class="m-2 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark text-center">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
                     <NuxtImg class="rounded-t-lg object-cover w-full max-h-60" 
+                    defer
                     src="/mercedes-platforma.webp"
                     alt="platform" 
                     sizes="320px sm:640px" 
@@ -71,10 +73,11 @@
             <!-- Card 3 -->
             <div class="m-2 block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark text-center">
                 <div class="relative overflow-hidden bg-cover bg-no-repeat">
-                    <NuxtImg class="rounded-t-lg object-cover w-full max-h-60" 
+                    <NuxtImg class="rounded-t-lg object-cover w-full max-h-60"
+                    defer
                     src="/hands.webp" 
                     alt="keys" 
-                    sizes="320px sm:640px" 
+                    sizes="320px xs:360px" 
                     densities="x1" 
                     loading="lazy" 
                     title="car keys" 

@@ -3,10 +3,10 @@
     <div class="flex flex-col m-5 p-5 md:flex-row max-w-[1250px] md:p-10 bg-white rounded-2xl shadow-lg overflow-hidden min-w-[340px]">
       <div class="w-full md:w-1/2 flex-shrink-0 flex justify-center items-center">
         <div class="frame self-center">
-          <NuxtImg loading="lazy" sizes="xs:100vw sm:100vw md:100vw lg:100vw" preload quality="80" fetchpriority="high" class="unsplash" alt="Unsplash" src="../assets/images/service_1.webp" />
-          <NuxtImg loading="lazy" sizes="xs:100vw sm:100vw md:100vw lg:100vw" preload quality="80" fetchpriority="high" class="unsplash" alt="Unsplash" src="../assets/images/service_2.webp" />
-          <NuxtImg loading="lazy" sizes="xs:100vw sm:100vw md:100vw lg:100vw" preload quality="80" fetchpriority="high" class="unsplash" alt="Unsplash" src="../assets/images/autocar.webp" />
-          <NuxtImg loading="lazy" sizes="xs:100vw sm:100vw md:100vw lg:100vw" preload quality="80" fetchpriority="high" class="unsplash" alt="Unsplash" src="../assets/images/service_3.webp" />
+          <NuxtImg defer loading="lazy" sizes="xs:50% sm:50% md:200px" class="unsplash" alt="Unsplash" src="/service_1.webp" />
+          <NuxtImg defer loading="lazy" sizes="xs:50% sm:50% md:200px" class="unsplash" alt="Unsplash" src="/service_2.webp" />
+          <NuxtImg defer loading="lazy" sizes="xs:50% sm:50% md:200px" class="unsplash" alt="Unsplash" src="/autocar.webp" />
+          <NuxtImg defer loading="lazy" sizes="xs:50% sm:50% md:200px" class="unsplash" alt="Unsplash" src="/service_3.webp" />
         </div>
       </div>
       <div class="p-6 md:w-1/2 flex flex-col justify-center">
