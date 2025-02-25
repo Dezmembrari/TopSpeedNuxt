@@ -3,10 +3,10 @@
     <div class="flex flex-col m-5 p-5 md:flex-row max-w-[1250px] md:p-10 bg-white rounded-2xl shadow-lg overflow-hidden min-w-[340px]">
       <div class="w-full md:w-1/2 flex-shrink-0 flex justify-center items-center">
         <div class="frame self-center">
-          <img class="unsplash" alt="Unsplash" src="../assets/images/service_1.webp" />
-          <img class="unsplash" alt="Unsplash" src="../assets/images/service_2.webp" />
-          <img class="unsplash" alt="Unsplash" src="../assets/images/autocar.webp" />
-          <img class="unsplash" alt="Unsplash" src="../assets/images/service_3.webp" />
+          <NuxtImg loading="lazy" sizes="xs:100vw sm:100vw md:100vw lg:100vw" preload quality="80" fetchpriority="high" class="unsplash" alt="Unsplash" src="../assets/images/service_1.webp" />
+          <NuxtImg loading="lazy" sizes="xs:100vw sm:100vw md:100vw lg:100vw" preload quality="80" fetchpriority="high" class="unsplash" alt="Unsplash" src="../assets/images/service_2.webp" />
+          <NuxtImg loading="lazy" sizes="xs:100vw sm:100vw md:100vw lg:100vw" preload quality="80" fetchpriority="high" class="unsplash" alt="Unsplash" src="../assets/images/autocar.webp" />
+          <NuxtImg loading="lazy" sizes="xs:100vw sm:100vw md:100vw lg:100vw" preload quality="80" fetchpriority="high" class="unsplash" alt="Unsplash" src="../assets/images/service_3.webp" />
         </div>
       </div>
       <div class="p-6 md:w-1/2 flex flex-col justify-center">

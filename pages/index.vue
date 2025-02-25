@@ -1,7 +1,9 @@
 <template>
   <DelayHydration>
     <div>
-      <Hero />
+      <!-- <Hero />
+      <br><br><br><br><br><br><br><br> -->
+      <Hero-Alt/>
       <SkipHydration>
         <Cards />
         <Steps />
@@ -19,7 +21,7 @@
 <script setup>
 definePageMeta({
   prerender: true,  // Enables SSG (Static Generation) for this page
-  lazy: true,
+  // lazy: true,
 })
 
 
