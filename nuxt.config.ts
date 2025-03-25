@@ -1,6 +1,7 @@
 import { cache } from "sharp";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
 
@@ -55,12 +56,17 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/css/main.css",],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
+  
+  vite:{
+    plugins: [tailwindcss(),],
+      //"@tailwindcss/postcss": {},
+      build: {
+        sourcemap: true,
+      },
   },
+    
+  
+  
 
   experimental:{
     payloadExtraction: true,
@@ -69,7 +75,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    '@nuxtjs/tailwindcss',
+    //'@nuxtjs/tailwindcss',
     '@nuxt/image',
     '@nuxtjs/google-fonts',
     '@nuxt/icon',
@@ -77,12 +83,13 @@ export default defineNuxtConfig({
     'nuxt-delay-hydration',
     'nuxt-vitalizer',
     '@nuxtjs/seo',
-    '@nuxt/content'
+    '@nuxt/content',
+    //'@tailwindcss/postcss',
   ],
 
-  tailwindcss: {
-    viewer: false, // Prevent unnecessary processing
-  },
+  // tailwindcss: {
+  //   viewer: false, // Prevent unnecessary processing
+  // },
 
   gtm: {
     id: 'GTM-WF7RMP9G',  // Replace this with your actual GTM container ID

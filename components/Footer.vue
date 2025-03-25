@@ -29,7 +29,7 @@
         <div class="text-lg font-semibold mb-2">Acces rapid</div>
         <!-- <div><NuxtLink class="text-white" to="/flota">Flota</NuxtLink></div> -->
         <div><NuxtLink class="text-white" to="/servicii">Servicii</NuxtLink></div>
-        <div><NuxtLink class="text-white" to="/angajam">Angajam</NuxtLink></div>
+        <!-- <div><NuxtLink class="text-white" to="/angajam">Angajam</NuxtLink></div> -->
         <div><NuxtLink class="text-white" to="/#contact">Contact</NuxtLink></div>
       </div>
     </div>

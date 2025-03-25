@@ -90,7 +90,7 @@ box-sizing: border-box; /* Ensures padding is included in the width */
 // }
 
 .rating-text {
-flex-grow: 1;
+grow: 1;
 display: flex;
 flex-direction: column;
 }

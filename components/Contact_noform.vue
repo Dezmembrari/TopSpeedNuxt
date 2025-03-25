@@ -1,5 +1,5 @@
 <template>
-  <div class="flex pt-10 flex-col lg:flex-row justify-center items-center min-w-[360px] bg-[#f1fceccc]" id="contact">
+  <div class="flex pt-10 flex-col lg:flex-row justify-center items-center min-w-[360px] bg-[#f1fceccc]">
     <div class="flex-1 max-w-[800px] w-full"> <!-- Added w-full for full width -->
       <div class="p-5 bg-white shadow-lg rounded-[25px] text-black">
         <div class="flex flex-col lg:flex-row gap-8 justify-center items-center">

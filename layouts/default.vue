@@ -21,8 +21,6 @@
 </template>
 
 <script lang="ts" setup>
-import { DelayHydration } from '#components';
-
 // Disable automatic attribute inheritance
 defineOptions({
   inheritAttrs: false

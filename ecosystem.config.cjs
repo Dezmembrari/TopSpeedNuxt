@@ -4,7 +4,7 @@ module.exports = {
         name: 'NuxtTopSpeed',
         port: '3000',
         exec_mode: 'cluster',    // Enables cluster mode
-        instances: 'max',        // Spawns one instance per CPU core (you can adjust this)
+        instances: '4',        // Spawns one instance per CPU core (you can adjust this)
         script: './.output/server/index.mjs'
       }
     ]

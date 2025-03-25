@@ -21,7 +21,7 @@ export default <Config>{
       typography: ({ theme }: { theme: (path: string) => any }) => ({
         DEFAULT: {
           css: {
-            fontFamily: theme('fontFamily.sans'),
+            'font-family': theme('fontFamily.sans'),
           },
         },
       }),

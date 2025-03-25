@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col py-5 lg:py-10 lg:flex-row justify-center items-center min-w-[360px] bg-[#f1fceccc]" id="despre">
     <div class="flex flex-col m-5 p-5 md:flex-row max-w-[1250px] md:p-10 bg-white rounded-2xl shadow-lg overflow-hidden min-w-[340px]">
-      <div class="w-full md:w-1/2 flex-shrink-0 flex justify-center items-center">
+      <div class="w-full md:w-1/2 shrink-0 flex justify-center items-center">
         <div class="frame self-center">
           <NuxtImg defer loading="lazy" sizes="xs:50% sm:50% md:200px" class="unsplash" alt="Unsplash" src="/service_1.webp" />
           <NuxtImg defer loading="lazy" sizes="xs:50% sm:50% md:200px" class="unsplash" alt="Unsplash" src="/service_2.webp" />
@@ -11,7 +11,7 @@
       </div>
       <div class="p-6 md:w-1/2 flex flex-col justify-center">
         <h2 class="text-2xl font-bold mb-4">Despre noi</h2>
-        <p class="text-wrapper-despre-noi rounded-2xl overflow-auto flex-grow">
+        <p class="text-wrapper-despre-noi rounded-2xl overflow-auto grow">
           Din 2001, Top Speed Service SRL a evoluat constant, adaptându-se celor mai recente tehnologii și standarde din
           industrie. Astăzi, suntem un service auto modern, dotat cu echipamente de ultimă generație și o echipă de
           specialiști pasionați de ceea ce fac. Oferim o gamă completă de servicii, de la întreținerea periodică până la

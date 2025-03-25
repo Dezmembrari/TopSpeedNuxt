@@ -9,7 +9,9 @@
         <Steps />
       </SkipHydration>
       <client-only>
+        <section id="contact">
         <Contact_noform />
+      </section>
       </client-only>
       <SkipHydration>
         <DespreNoi />
