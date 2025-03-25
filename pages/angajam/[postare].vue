@@ -25,6 +25,18 @@ const getDetailsFromMeta = (meta: JobMeta): string[] => {
     meta.program || 'Program nespecificat',
   ];
 };
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NO INDEX UNTIL DEPLOYMENT !!!!!!!!!!!!!!!!!!!!!!!!!
+
+// const rule = useRobotsRule()
+// rule.value = 'noindex, nofollow'
+
+definePageMeta({
+  indexable: false // marks this page as "noindex"
+})
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 </script>
 
 <template>

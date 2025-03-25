@@ -45,9 +45,9 @@
         <li>
           <NuxtLink class="link" to="/servicii">Servicii</NuxtLink>
         </li>
-        <li>
+        <!-- <li>
           <NuxtLink class="link" to="/angajam">Angajam</NuxtLink>
-        </li>
+        </li> -->
         <li>
           <NuxtLink class="link-t" to="/#contact">
             <div class="contacteaza-ne">
@@ -70,9 +70,9 @@
           <li>
             <NuxtLink class="link" to="/servicii" @click="closeMobileNav">Servicii</NuxtLink>
           </li>
-          <li>
+          <!-- <li>
             <NuxtLink class="link" to="/angajam" @click="closeMobileNav">Angajam</NuxtLink>
-          </li>
+          </li> -->
           <li>
             <NuxtLink class="link" to="/#contact" @click="closeMobileNav">Contact</NuxtLink>
           </li>
