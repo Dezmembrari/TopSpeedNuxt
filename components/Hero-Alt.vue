@@ -154,6 +154,7 @@
   background-size: cover;
   width: 100%;
   height: 70vh;
+  max-height: 580px;
   position: relative;
   text-align: center;
 }
